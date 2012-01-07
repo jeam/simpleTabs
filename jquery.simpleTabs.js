@@ -1,5 +1,5 @@
 /* 
- * simpleTabs jQuery Plugin v0.1.0
+ * simpleTabs jQuery Plugin v0.1.1
  * Copyright (c) 2012 Jorge Álvarez
  *
  * Licensed under the MIT license
@@ -10,11 +10,10 @@
     
     var settings = $.extend( {
       select: 1
-    }, options);
-    
-    var $this = $(this),
-        $tabs = $this.children('div.tab'),
-        $nav = $this.find('ul.nav');
+    }, options),
+    $this = $(this),
+    $tabs = $this.children('div.tab'),
+    $nav = $this.find('ul.nav');
     
     $nav.find('a').click(function(e){
       var href = $(this).attr('href');
