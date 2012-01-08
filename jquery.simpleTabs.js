@@ -8,12 +8,14 @@
 (function($) {
   $.fn.simpleTabs = function(options) {
     
-    var settings = $.extend( {
-      select: 1
-    }, options),
+    var settings,
     $this = $(this),
-    $tabs = $this.children('div.tab'),
-    $nav = $this.find('ul.nav');
+    $tabs = $this.children('.tab'),
+    $nav = $this.find('.nav');
+	
+    settings = $.extend( {
+      select : 1
+    }, options),
     
     $nav.find('a').click(function(e){
       var href = $(this).attr('href');
